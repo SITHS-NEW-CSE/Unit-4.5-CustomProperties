@@ -1,0 +1,31 @@
+.main {
+    width: 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.first-subsection {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: aqua;
+  border-radius: 1rem;
+  text-align: center;
+}
+.second-subsection {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: orange;
+  border-radius: 1rem;
+  text-align: center;
+}
+.third-subsection {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: pink;
+  border-radius: 1rem;
+  text-align: center;
+}
