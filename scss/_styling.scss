@@ -4,16 +4,20 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    --first-color: rgb(15, 248, 248);
+    --second-color: rgb(252, 173, 26);
+
 }
-.first-subsection {
+#first-subsection {
   font-size: 3rem;
   padding: 2rem;
   margin: 1rem;
-  background-color: aqua;
+  background-color: var(--first-color);
+  color: black;
   border-radius: 1rem;
   text-align: center;
 }
-.second-subsection {
+#second-subsection {
   font-size: 3rem;
   padding: 2rem;
   margin: 1rem;
@@ -21,7 +25,7 @@
   border-radius: 1rem;
   text-align: center;
 }
-.third-subsection {
+#third-subsection {
   font-size: 3rem;
   padding: 2rem;
   margin: 1rem;
