@@ -1,35 +1,40 @@
+
+// custom properties are used to contain a value that can be declared using var(), and can change if you modify it later in your code
+// they begin with -- instead of $
+// if a custom property that is declared in the parent element, is modified in one of the children, then it will only be modified for that one child, not all of them
+
 .main {
     width: 100%;
     background-position: center;
     display: flex;
     align-items: center;
     flex-direction: row;
+    // here you can see 3 custom properties declared, containing a first, second, and third color, equating to a blue, an orange, and black 
     --first-color: rgb(15, 248, 248);
     --second-color: rgb(252, 173, 26);
-
+    --third-color: black;
+}
+.subsection {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-align: center;
 }
 #first-subsection {
-  font-size: 3rem;
-  padding: 2rem;
-  margin: 1rem;
+  // here, the first color (in this case: blue) is applied to the background and the third color (in this case: black) is applied to the text color
   background-color: var(--first-color);
-  color: black;
-  border-radius: 1rem;
-  text-align: center;
+  color: var(--third-color);
 }
 #second-subsection {
-  font-size: 3rem;
-  padding: 2rem;
-  margin: 1rem;
-  background-color: orange;
-  border-radius: 1rem;
-  text-align: center;
+  // here, the second color (in this case: orange) is applied to the background howeer, the third color is modified to be white, and is applied to the text color
+  background-color: var(--second-color);
+  --third-color: white;
+  color: var(--third-color);
 }
 #third-subsection {
-  font-size: 3rem;
-  padding: 2rem;
-  margin: 1rem;
-  background-color: pink;
-  border-radius: 1rem;
-  text-align: center;
+  // here, the first color is modified to be pink, and is applied to the background color, and the third color is applied to the text color, and is STILL BLACK, NOT WHITE, because it was only modified to become white in the second-subsection 
+  --first-color: rgb(255, 169, 184);
+  background-color: var(--first-color);
+  color: var(--third-color);
 }

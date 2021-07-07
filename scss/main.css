@@ -1,0 +1,57 @@
+.main {
+  width: 100%;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  --first-color: rgb(15, 248, 248);
+  --second-color: rgb(252, 173, 26);
+  --third-color: black;
+}
+
+.subsection {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+#first-subsection {
+  background-color: var(--first-color);
+  color: var(--third-color);
+}
+
+#second-subsection {
+  background-color: var(--second-color);
+  --third-color: white;
+  color: var(--third-color);
+}
+
+#third-subsection {
+  --first-color: rgb(255, 169, 184);
+  background-color: var(--first-color);
+  color: var(--third-color);
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html {
+  min-height: 100%;
+}
+/*# sourceMappingURL=main.css.map */
